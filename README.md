@@ -1,4 +1,4 @@
-# LinMod
+# Linmod
 This repo contains a variety of Linux kernel modules that are for educational purposes.
 These modules demonstrate:
 
