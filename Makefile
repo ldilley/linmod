@@ -1,4 +1,4 @@
-obj-m += linmod.o linmod2.o linmod_dev.o
+obj-m += linmod.o linmod2.o linmod_dev.o linmod_sysfs.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
