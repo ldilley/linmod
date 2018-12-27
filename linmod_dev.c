@@ -77,7 +77,7 @@ static ssize_t device_read(struct file *flip, char *buffer, size_t len, loff_t *
     return -EFAULT;
   }
   (*offset) += bytes;
-  printk(KERN_INFO "%s->%s(): %zu read from /dev/%s.\n", MODULE_NAME, __func__, bytes, DEVICE_NAME);
+  printk(KERN_INFO "%s->%s(): %zu bytes read from /dev/%s.\n", MODULE_NAME, __func__, bytes, DEVICE_NAME);
   return bytes;
 }
 
@@ -102,7 +102,7 @@ static ssize_t device_write(struct file *flip, const char *buffer, size_t len, l
     return -EFAULT;
   }
   msg_buffer[len] = '\0'; /* append null terminator */
-  printk(KERN_INFO "%s->%s(): %zu written to /dev/%s.\n", MODULE_NAME, __func__, len, DEVICE_NAME);
+  printk(KERN_INFO "%s->%s(): %zu bytes written to /dev/%s.\n", MODULE_NAME, __func__, len, DEVICE_NAME);
   return len;
 }
 
