@@ -1,5 +1,8 @@
-# Linmod
+# LinMod
 This repo contains a variety of Linux kernel modules that are for educational purposes.
+
+See the equivalent FreeBSD kernel module project: [BSDMod](https://github.com/ldilley/bsdmod)
+
 These modules demonstrate:
 
 * How kernel space differs from user space (availability of different functions)
