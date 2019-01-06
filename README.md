@@ -24,6 +24,9 @@ These modules demonstrate:
 6. To view module output after unloading: `dmesg`
 7. To view information about a particular module: `modinfo <module_name>.ko`
 
+### ToDo
+* Provide device file, module dependency, /proc, /sys, and sysctl examples
+
 #### Notes:
 * The `-v` argument in the above instruction for `rmmod` is optional and attempts to generate verbose output if available.
 * `make clean` can be used to remove all build data.
